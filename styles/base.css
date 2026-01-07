@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #574964;
+    --secondary-color: #9F8383;
+    --third-color: #C8AAAA;
+    --fourth-color: #FFDAB3;
+}
+
+header {
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+}
+
+.course-title {
+    display: block;
+    background-color: var(--secondary-color) ;
+}
+
+.ribbon ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    list-style: none;
+    background-color: var(--primary-color);
+}
+
+.ribbon a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.ribbon ul:hover {
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.ribbon a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+    /* padding: 2px 4px; */
+    border-radius: 4px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+    display: inline-block; 
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 16px;                      
+  padding: 16px;
+}
+
+main h1 {
+  grid-column: 1 / -1;           
+  font-weight: 100;     
+  margin: 5px auto;
+  margin-bottom: 8px;
+}
+
+.card {
+  border: 1px solid var(--third-color);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
