@@ -29,6 +29,7 @@ h1, h2, h3 {
 .course-title {
     display: block;
     background-color: var(--secondary-color) ;
+    color: whitesmoke;
 }
 
 .ribbon ul {
@@ -76,4 +77,12 @@ main h1 {
   border-radius: 8px;
   padding: 16px;
   background: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    margin-top: 20px;
 }
