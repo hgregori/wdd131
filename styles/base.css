@@ -26,7 +26,7 @@ h1, h2, h3 {
     font-weight: 100;
 }
 
-.course-title {
+header span#course-title {
     display: block;
     background-color: var(--secondary-color) ;
     color: whitesmoke;
