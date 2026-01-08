@@ -86,3 +86,10 @@ footer {
     color: whitesmoke;
     margin-top: 20px;
 }
+
+.card img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
