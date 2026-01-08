@@ -30,6 +30,7 @@ header span#course-title {
     display: block;
     background-color: var(--secondary-color) ;
     color: whitesmoke;
+    padding: 5px 10px;
 }
 
 .ribbon ul {
