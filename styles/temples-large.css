@@ -87,7 +87,7 @@ body {
 
     footer {
         border: 2px solid rgb(0, 0, 0, 0.8);
-        background-color: var(--option-color);
+        background-color: var(--primary-color);
         padding: 20px;
         text-align: center;
     }
