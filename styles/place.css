@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0C2C55;
+    --secondary-color: #296374;
+    --background-color: #629FAD;
+    --font-color: #EDEDCE;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--font-color);
+}
+
+header h1 {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #0C2C55;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.hero {
+  display: block;            
+  max-width: 1200px;       
+  margin-inline: auto;
+  border-bottom: 5px solid var(--secondary-color);            
+}
+
+.hero > img {
+  display: block;             
+  width: 100%;                
+  height: auto;               
+  margin: 0 auto;            
+}
+
+section {
+  max-width: 420px;        
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;      
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+section img {
+  display: block;
+  margin: 8px auto;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   
+  column-gap: 1rem;
+  row-gap: .35rem;
+  text-align: left;         
+}
+
+dt, dd {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+  justify-self: end;        
+  position: relative;
+}
+
+dt::after {
+  content: ":";
+  margin-left: .20rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+}
+
+
+
+@media(min-width:600px) {
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        max-width: 960px;
+    }
+
+    section {
+        max-width: 420px;        
+        margin: 2rem auto;
+        padding: 1rem;
+        text-align: center;      
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.25rem;
+    }
+
+    section img {
+        display: block;
+        margin: 0.5rem auto 1rem;
+    }
+
+    .data {
+        position: absolute;
+    }
+}
+
