@@ -60,6 +60,7 @@ section h2 {
 section img {
   display: block;
   margin: 8px auto;
+  width: 60px;
 }
 
 dl {
