@@ -97,9 +97,9 @@ footer {
 
 
 
-@media(min-width:600px) {
+@media(min-width:800px) {
 
-    main {
+    .warper {
         position: relative;
     }
 
@@ -126,6 +126,41 @@ footer {
 
     .data {
         position: absolute;
+        top: 0.7rem;        
+        left: 18%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.60);
+        backdrop-filter: blur(2px);
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        width: min(90%, 270px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
+
+    .weather {
+        position: absolute;
+        bottom: 0.7rem;           /* distance from top of hero */
+        left: 84%;
+        transform: translateX(-50%);
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.60);
+        backdrop-filter: blur(2px);
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        width: min(90%, 260px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+        @media (min-width: 600) {
+            .data {
+                width: min(90%, 240px);
+                font-size: 100px;
+            }
+            
+            .weather {
+                width: min(90%, 220px);  
+                font-size: 100px; 
+            }
+        }
 }
 
