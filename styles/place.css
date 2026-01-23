@@ -9,13 +9,14 @@
     --secondary-color: #296374;
     --background-color: #629FAD;
     --font-color: #EDEDCE;
+    --display-background:#d1d1cd;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--font-color);
+    background-color: var(--display-background);
 }
 
 header h1 {
@@ -99,13 +100,25 @@ footer {
 
 
 @media(min-width:800px) {
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+    }
 
+    .weather img, .data img {
+        display : none;
+    }
+
+    .data h2::after {
+        content: " 📅";
+        font-size: 1.5rem;
+    }
     .warper {
         position: relative;
     }
 
     .hero img {
-        max-width: 960px;
+        max-width: 1200px;
     }
 
     section {
