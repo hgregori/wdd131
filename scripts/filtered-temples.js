@@ -131,9 +131,14 @@ function renderTemples(list) {
     const areaP = document.createElement("p");
     areaP.innerHTML = `<strong>Area:</strong> ${t.area.toLocaleString()} sq ft`;
 
+	const divInf = document.createElement("div");
+	divInf.className = "temple-info";
+
 	container.appendChild(article);
-    article.append(h2, locationP, dedicatedP, areaP, figure);
-	
+    article.append(h2, divInf, figure);
+	divInf.appendChild(locationP);
+	divInf.appendChild(dedicatedP);
+	divInf.appendChild(areaP);
     figure.appendChild(img);
     figure.appendChild(figcaption);
     
