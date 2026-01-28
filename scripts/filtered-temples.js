@@ -122,9 +122,6 @@ function renderTemples(list) {
     const figcaption = document.createElement("figcaption");
     figcaption.textContent = t.templeName;
 
-    figure.appendChild(img);
-    figure.appendChild(figcaption);
-
     const locationP = document.createElement("p");
     locationP.innerHTML = `<strong>Location:</strong> ${t.location}`;
 
@@ -134,8 +131,12 @@ function renderTemples(list) {
     const areaP = document.createElement("p");
     areaP.innerHTML = `<strong>Area:</strong> ${t.area.toLocaleString()} sq ft`;
 
-    article.append(h2, figure, locationP, dedicatedP, areaP);
-    container.appendChild(article);
+	container.appendChild(article);
+    article.append(h2, locationP, dedicatedP, areaP, figure);
+	
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
+    
   });
 }
 

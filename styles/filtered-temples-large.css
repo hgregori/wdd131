@@ -20,6 +20,11 @@ body {
     margin: 20px auto;
     background-color: var(--background-color);
     color: aliceblue;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-area:
+        "header", "main", "footer";
 }
 
     header {
@@ -35,7 +40,7 @@ body {
         color: aliceblue;
     }
 
-    header ul {
+    header nav ul {
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -60,29 +65,9 @@ body {
         color: rgb(198, 226, 250);
     }
 
-    main {
-        margin-bottom: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     main h1 {
         text-align: center;
         margin-bottom: 30px;
-        grid-column: 1 / -1;
-    }
-
-    main figure img {
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        border: 2px solid rgb(0, 0, 0, 0.8);
-    }
-
-    main figure {
-        display: block;
-        text-align: center;
-        margin: 5px auto;
     }
 
     footer {
@@ -92,4 +77,30 @@ body {
         text-align: center;
     }
 
+    #temples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 960px;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
 
+    #temples article {
+        margin: 0;
+        padding: 10px;
+        background-color: var(--secondary-color);
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    #temples img {
+        width: 100%;
+        height: auto;
+        max-width: 380px;
+        border-radius: 8px;
+        margin: 0.5rem auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        border: 2px solid rgb(255, 255, 255, 0.2);
+    }

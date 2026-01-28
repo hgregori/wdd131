@@ -1,11 +1,6 @@
 @media (max-width:800px) {
-   main {
+   #temples {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    main h1 {
-        text-align: center;
-        grid-column: 1 / -1;
     }
 }
 
@@ -21,7 +16,7 @@
         align-items: center;
     }
 
-    main {
+    #temples {
         grid-template-columns: repeat(1, 1fr);
     }
 
