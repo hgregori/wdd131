@@ -23,8 +23,6 @@ body {
     
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-area:
-        "header", "main", "footer";
 }
 
     header {
