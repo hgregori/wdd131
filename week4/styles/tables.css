@@ -1,0 +1,35 @@
+body { 
+    padding: 10%;
+}
+
+table {
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+
+    td, th {
+        padding: 8px 10px;
+    }
+
+    thead {
+        background-color: rgb(69, 69, 69);
+        color: aliceblue;
+    }
+
+        .blank  {
+        background: black;
+    }
+
+    td {
+        text-align: center;
+        border: 1px solid black;
+    }
+
+        tr:nth-last-child(3) {
+        background-color: #333;
+        }
+
+    tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+}   
