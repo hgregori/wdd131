@@ -1,4 +1,4 @@
-// Mobile menu toggle
+
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('#site-nav');
 if (toggle && nav) {
@@ -8,11 +8,9 @@ if (toggle && nav) {
   });
 }
 
-// Current year in footer
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Simple client-side form validation (example)
 const form = document.querySelector('.book-form');
 if (form) {
   form.addEventListener('submit', (e) => {
