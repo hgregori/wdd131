@@ -15,6 +15,12 @@
     --body-background: rgb(229, 224, 224);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     font-family: var(--font-family);
     background-color: var(--body-background);
