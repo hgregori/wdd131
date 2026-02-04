@@ -56,7 +56,7 @@ main {
     margin: 15px auto 0;
 }
 
-.submit input[type="submit"], .submit button {
+.submit input {
     background-color: var(--primary-color);
     color: var(--font-color);
     padding: 10px 20px;
@@ -69,7 +69,7 @@ main {
     width: 100%;
 }
 
-.submit input[type="submit"]:hover {
+.submit button:hover {
     background-color: var(--button-hover-color);
 }
 
