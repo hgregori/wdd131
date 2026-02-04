@@ -28,6 +28,19 @@ header {
     background-color: var(--primary-color);
     padding: 20px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -130,6 +143,16 @@ textarea {
     box-sizing: border-box;
     margin-top: 5px;
 }
+
+.reviews {  
+    padding: 10px;
+}
+
+.reviews h2 {
+    margin-bottom: 10px;
+}
+
+
 
 @media (max-width: 480px) {
     .form { 
