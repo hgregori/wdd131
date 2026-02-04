@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - WDD131 | Henrique Gregorio</title>
+    <meta name="author" content="Henrique Gregorio">
+    <meta name="description" content="Form page for WDD131 course by Henrique Gregorio, where I will develop a form for the course.">
+
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form class="form" action="review.html" method="get">
+            <div class="product">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="product3">Product 3</option>
+                </select>
+            </div>
+
+<div class="overall">
+    <span class="rating">Overall rating</span>
+
+    <div class="stars">
+        <label class="star-option">
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <span class="star">⭐</span>
+        </label>
+
+        <label class="star-option">
+            <input type="radio" id="rating2" name="rating" value="2">
+            <span class="star">⭐⭐</span>
+        </label>
+
+        <label class="star-option">
+            <input type="radio" id="rating3" name="rating" value="3">
+            <span class="star">⭐⭐⭐</span>
+        </label>
+
+        <label class="star-option">
+            <input type="radio" id="rating4" name="rating" value="4">
+            <span class="star">⭐⭐⭐⭐</span>
+        </label>
+
+        <label class="star-option">
+            <input type="radio" id="rating5" name="rating" value="5">
+            <span class="star">⭐⭐⭐⭐⭐</span>
+        </label>
+    </div>
+</div>
+
+
+            <div class="installation">
+                <label for="date">Date of Installation</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="features">
+                <label for="features">Useful Features</label>
+                <div class="list-features">
+                  <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+
+                    <input type="checkbox" id="ease" name="features" value="ease-of-use">
+                    <label for="ease">Ease of Use</label>
+
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+
+            <div class="review">
+                <label for="review">Written Review</label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+
+            <div class="name">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Henrique Missieri Gregorio | Brazil 🌴</p>
+        <p id="lastModified"></p>
+    </footer>    
+
+    <script src="scripts/form.js" defer></script>
+
+</body>
+
+</html>

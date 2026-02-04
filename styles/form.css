@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #597445;
+    --secondary-color: #658147;
+    --third-color: #729762;
+    --font-family: 'Arial, sans-serif';
+    --font-color: #E7F0DC;
+    --button-hover-color: #45a049;
+    --shadowing: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --body-background: rgb(229, 224, 224);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--body-background);
+    display: grid;
+    grid-template-rows: 80px 1fr 100px;
+    color: var(--font-color);
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 10px auto;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: var(--shadowing);
+    background-color: var(--third-color);
+    color: black;
+    max-width: 960px;
+    height: auto;
+     border: 1px solid #ccc;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr; 
+}
+
+.form {
+    margin: 10px;
+}
+
+.submit {
+    text-align: center;
+    margin: 15px auto 0;
+}
+
+.submit input[type="submit"], .submit button {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: var(--shadowing);
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+}
+
+.product, .overall, .installation, .features, .review, .name {
+    margin-bottom: 15px;
+    display: grid;
+}
+
+.list-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding-top: 5px;
+} 
+
+.stars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.star-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.star-option input {
+    margin-bottom: 0.25rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+    .form { 
+        margin: 20px auto;
+    }
+
+    main {
+        max-width: 320px;
+    }
+}
