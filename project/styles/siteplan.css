@@ -64,6 +64,24 @@ main {
     margin-top: 40px;
 }
 
+.wireframes-view {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 450px));
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.wireframes-view h3 {
+    text-align: center;
+    color: var(--background-color);
+    margin-bottom: 10px;
+}
+
+.grid-lar, .grid-mo {
+    border: var(--background-color);
+}
+
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -72,6 +90,17 @@ main {
         "box-3 box-4"
         "rectangle1 rectangle1";
     gap: 20px;
+    justify-content: center;
+}
+
+.grid-mobile {
+    display: grid;
+    grid-template-areas:
+        "rectangle1"
+        "rectangle2"
+        "rectangle3" 
+        "rectangle4";
+    gap: 14px;
     justify-content: center;
 }
 
@@ -100,3 +129,15 @@ h2 {
 
 .site-footer{background:var(--background-color); color:#eaf0ec; margin-top:2rem}
 .site-footer p{text-align:center; padding:1rem; font-size:clamp(0.9rem, 0.8rem + 0.3vw, 1.1rem)}
+
+@media  (max-width:600px) {
+    .siteplan-container {
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+    }
+
+    .wireframes-view {
+        grid-template-columns: 1fr;
+        margin: 10px auto;   
+    }
+}
